@@ -1,0 +1,306 @@
+/*  Copyright © 2014 gokoururi
+    This work is free. You can redistribute it and/or modify it under the
+    terms of the Do What The Fuck You Want To Public License, Version 2,
+    as published by Sam Hocevar. See the COPYING file for more details. */
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    font-family: Tahoma;
+    text-align: center;
+    border: 0;
+    background: #1D1F21;
+    background-image: url('images/bg.png') !important;
+}
+
+.highlite {
+    color: #d67b96;
+}
+
+.plain {
+    padding: 20px 20px 20px 20px;
+}
+
+main {
+    display: inline-block;
+    min-width: 500px;
+    font-size: 12px;
+    padding: 30px 30px 30px 30px;
+    background-color: #282A2E;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid #373B41;
+    margin: 5vh 0 0 0;
+}
+
+a.reddit-voting-arrows ,
+div.reddit-header,
+span.linkflairlabel {
+
+    display: none !important;
+
+}
+
+
+div.reddit-entry.entry.unvoted {
+
+    margin-left: 0px !important;
+    margin-top: 5px !important;
+    min-height: 40px !important;
+}
+
+div.reddit-link.even :hover,
+div.reddit-link.odd :hover{
+
+    color: white !important;
+    transition: all 0.2s;
+
+}
+
+div.reddit-link-end {
+
+    display: none; !important;
+
+}
+
+
+a.reddit-link-title.may-blank {
+
+    color: #81A2BE !important;
+
+}
+
+a.reddit-link-title.may-blank :hover {
+
+    color: #d67b96 !important;
+
+}
+
+div.rembeddit {
+
+    border: 3px solid #373B41 !important;
+
+
+}
+
+section.feed {
+
+    width: 700px;
+
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #FFF;
+    letter-spacing: 2px;
+    font-size: 70px;
+    font-weight: normal;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.subtitle {
+    color: #FFF;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 0;
+}
+
+.feed {
+
+    display: inline-block;
+
+}
+
+.searchContainer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.searchForm {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.searchBar {
+    color: #000;
+    width: 618px;
+    height: 34px;
+    padding-left: 10px;
+    font-size: 18px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: right center;
+    border: 1px solid lightgrey;
+    transition: all 1s;
+}
+
+
+.searchBar:hover {
+    cursor: text;
+    box-shadow: 0 0 5px #FFF;
+    border: 1px solid #FFF;
+    transition: all 0.5s;
+    background-position: right center;
+    opacity: 1;
+}
+
+.searchBar:focus {
+    cursor: text;
+    color: #000;
+    opacity: 1;
+}
+
+nav {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+div{
+
+    margin-left: 0px !important;
+
+}
+
+/* Button configuration */
+.buttonList,
+.buttonList ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.button {
+    position: relative;
+    margin: 10px 10px;
+    display: inline-block;
+}
+.button > a {
+    display: inline-block;
+    min-width: 140px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 5px;
+    border-width: 2px solid;
+    border-style: solid;
+    outline: none;
+    transition: all 0.2s;
+}
+.buttonArrow > a:after {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    border-style: solid;
+    border-left-width: 5px;
+    border-top-width: 5px;
+    border-top-color: transparent;
+    border-bottom-width: 5px;
+    border-bottom-color: transparent;
+    border-right-width: 0;
+    content:"";
+    margin: 8px 10px 0 8px;
+    float: right;
+    transition: all 1s;
+}
+.buttonArrow:hover > a:after {
+    transition: transform 0.5s, border 1s;
+    transform: rotate(90deg);
+}
+.button > ul {
+    position: absolute;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    max-height: 0;
+    border-width: 0;
+    border-style: solid;
+    transition: all 0.2s;
+    z-index: 10;
+}
+.button:hover > ul {
+    max-height: 200px;
+    border-width: 1px;
+    border-style: solid;
+    transition: max-height 0.5s, border 1s;
+}
+
+.button > ul > li {
+    display: block;
+}
+.button > ul > li > a {
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 15px 0;
+    outline: 0;
+    transition: all 0.2s;
+}
+.button > ul > li > a:hover {
+    color: #d67b96;
+    background: #70293b;
+}
+
+/* Grey button */
+.buttonGrey > a,
+.buttonGrey > ul {
+    border-color: #373B41;
+}
+.buttonGrey > a,
+.buttonGrey > ul > li > a {
+    color: #81A2BE;
+    background: #1D1F21;
+}
+.buttonGrey > a:after {
+    border-left-color: #373B41;
+}
+.buttonGrey:hover > a,
+.buttonGrey > ul > li > a:hover {
+    color: #d67b96;
+    background: #70293b;
+}
+.buttonGrey:hover > a,
+.buttonGrey:hover > ul {
+    border-color: #70293b;
+}
+.buttonGrey:hover > a:after {
+    border-left-color: #d67b96;
+}
+
+/* Green button */
+.buttonGreen > a,
+.buttonGreen > ul {
+    border-color: #91b476;
+}
+.buttonGreen > a,
+.buttonGreen > ul > li > a {
+    color: #43644a;
+    background: #729a64;
+}
+.buttonGreen > a:after {
+    border-left-color: #91b476;
+}
+.buttonGreen:hover > a,
+.buttonGreen > ul > li > a:hover {
+    color: #269926;
+    background: #67E667;
+}
+.buttonGreen:hover > a,
+.buttonGreen:hover > ul {
+    border-color: #67E667;
+}
+.buttonGreen:hover > a:after {
+    border-left-color: #269926;
+}
