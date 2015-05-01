@@ -1,80 +1,84 @@
 <!--    Copyright © 2014 Ruairidh Carmichael
-        This work is free. You can redistribute it and/or modify it under the
-        terms of the Do What The Fuck You Want To Public License, Version 2,
-        as published by Sam Hocevar. See the COPYING file for more details. -->
+		This work is free. You can redistribute it and/or modify it under the
+		terms of the Do What The Fuck You Want To Public License, Version 2,
+		as published by Sam Hocevar. See the COPYING file for more details. -->
 <!DOCTYPE html> 
 <html>
-    <head>
+	<head>
 
-        <title>Welcome Home</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta charset="utf-8">
-        <link rel="icon" href="images/gaben.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon" />
-        <link rel="stylesheet" style="text/css" href="style.css" title="Eve2" />
+		<title>Welcome Home</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta charset="utf-8">
+		<link rel="icon" href="images/gaben.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon" />
+		<link rel="stylesheet" style="text/css" href="style.css" title="Eve2" />
 
-    </head>
-    <body>
+	</head>
+	<body>
 
-        <main id="main"> <!-- Random header image will be added by javascript on pageload -->
-            <header>
-                <img id="headerImage" src="images/headers/header1.png" width="302" height="102">
-                <script language="JavaScript">
+		<main id="main"> <!-- Random header image will be added by javascript on pageload -->
+			<header>
+				<div id="headerDiv">
+					<img id="headerImage" src="images/headers/header1.png" width="302" height="102">
+					<script language="JavaScript">
 
-                    function random_imglink(){
-                    var imagecount = 4
+						function random_imglink(){
+						var imagecount = 1 // Change this to the amount of headers you have in your header folder.
 
-                    var ry=Math.floor(Math.random()*imagecount + 1)
-                    if (ry==0)
-                    ry=1
-                    document.getElementById('headerImage').src="images/headers/header"+ry+".png";
-                }
-                random_imglink()
+						var ry=Math.floor(Math.random()*imagecount + 1)
+						if (ry==0)
+						ry=1
+						document.getElementById('headerImage').src="images/headers/header"+ry+".png";
+					}
+					random_imglink()
 
-                </script>
-            </header>
+					</script>
+					<div id="overlayDiv"><img src="images/headeroverlay.png" width="302" height="102"></div>
+				<div>
+			</header>
 
-            <section class="searchContainer">
-                <form class="searchForm" method="get" action="https://google.com/search">
-                    <input class="searchBar google" type="text" name="q" placeholder="Search" autofocus="autofocus" />
-                </form>
-            </section>
+			<section class="searchContainer">
+				<form class="searchForm" method="get" action="https://google.com/search">
+					<input class="searchBar google" type="text" name="q" placeholder="Search" autofocus="autofocus" />
+				</form>
+			</section>
 
-            <nav>
-                <ul class="buttonList">
-                    <li class="button buttonGrey"><a href="http://facebook.com">The Botnet</a></li>
-                    <li class="button buttonGrey"><a href="http://live.com">Outlook</a></li>
-                    <li class="button buttonGrey"><a href="http://facepunch.com">Facepunch</a></li>
-                    <li class="button buttonGrey"><a href="http://github.com">Github</a></li>
-                </ul>
+			<nav>
+				<ul class="buttonList">
+					<li class="button buttonGrey"><a href="http://facebook.com">The Botnet</a></li>
+					<li class="button buttonGrey"><a href="http://live.com">Outlook</a></li>
+					<li class="button buttonGrey"><a href="http://facepunch.com">Facepunch</a></li>
+					<li class="button buttonGrey"><a href="http://github.com">Github</a></li>
+				</ul>
 
-                <ul class="buttonList">
-                    <li class="button buttonGrey buttonArrow">
-                        <a href="http://reddit.com">reddit</a>
-                        <ul>
-                            <li><a href="http://reddit.com/r/games">Gaming</a></li>
-                            <li><a href="http://reddit.com/r/gamedev">PC Master Race</a></li>
-                            <li><a href="http://reddit.com/r/leagueoflegends">League Of Legends</a></li>
-                            <li><a href="http://reddit.com/r/unixporn">Unix Porn</a></li>
-                        </ul>
-                    </li>
-                    <li class="button buttonGrey"><a href="http://youtube.com">Youtube</a></li>
-                    <li class="button buttonGrey"><a href="http://soundcloud.com">Soundcloud</a></li>
-                    <li class="button buttonGrey buttonArrow">
-                        <a href="#">4chan</a>
-                        <ul>
-                            <li><a href="http://boards.4chan.org/g/">Technology</a></li>
-                            <li><a href="http://boards.4chan.org/v/">Video Games</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+				<ul class="buttonList">
+					<li class="button buttonGrey buttonArrow">
+						<a href="http://reddit.com">reddit</a>
+						<ul>
+							<li><a href="http://reddit.com/r/games">Gaming</a></li>
+							<li><a href="http://reddit.com/r/gamedev">PC Master Race</a></li>
+							<li><a href="http://reddit.com/r/leagueoflegends">League Of Legends</a></li>
+							<li><a href="http://reddit.com/r/unixporn">Unix Porn</a></li>
+						</ul>
+					</li>
+					<li class="button buttonGrey"><a href="http://youtube.com">Youtube</a></li>
+					<li class="button buttonGrey"><a href="http://soundcloud.com">Soundcloud</a></li>
+					<li class="button buttonGrey buttonArrow">
+						<a href="http://4chan.org">4chan</a>
+						<ul>
+							<li><a href="http://boards.4chan.org/g/">Technology</a></li>
+							<li><a href="http://boards.4chan.org/v/">Video Games</a></li>
+							<li><a href="http://boards.4chan.org/vg/">Video Game Generals</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
 
-            <section class="feed">
+			<section class="feed">
 
-                <script src="http://www.reddit.com/r/games+gamedev+technology/hot/.embed?limit=10&t=all&bgcolor=1D1F21" type="text/javascript"></script>
+				<script src="http://www.reddit.com/r/games+gamedev+technology/hot/.embed?limit=10&t=all&bgcolor=1D1F21" type="text/javascript"></script>
 
-            </section>
-        </main>
-    </body>
+			</section>
+		</main>
+	</body>
 </html>
 
